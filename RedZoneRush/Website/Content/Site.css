@@ -2,10 +2,22 @@
     max-width: 960px;
 }
 
+.cover-container {
+  max-width: 42em;
+}
+
+.alert-heading.notification {
+    font-size: 18px;
+    text-align: left;
+}
+
+.alert-heading.notification img{
+    padding-right: 15px;
+}
+
 /*
  * Custom translucent site header
  */
-
 .site-header {
     background-color: rgba(0, 0, 0, .85);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -24,6 +36,31 @@
 /*
  * Dummy devices (replace them with your own or something else entirely!)
  */
+
+.phone-list .list-group-item:first-child {
+    border-radius: 50px 50px 0 0;
+    height: 70px;
+    background-image: url("../images/phone-bg.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.phone-list .list-group-item {
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: transparent;
+}
+
+.phone-list .list-group-item.header {
+    background-color: #007bff;
+    font-weight: bold;
+    color: #fff;
+}
+
+.phone-list .list-group-item.header.dark {
+    background-color: #d6d8d9;
+    color: #1b1e21
+}
 
 .product-device {
     position: absolute;
@@ -56,12 +93,15 @@
     background-color: #e5e5e5;
 }
 
-
+ul li.list-group-item span.badge {
+    padding: 6px;
+}
 /*
  * Extra utilities
  */
-
-.border-top { border-top: 1px solid #e5e5e5; }
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
 .border-bottom { border-bottom: 1px solid #e5e5e5; }
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
@@ -80,3 +120,14 @@
 }
 
 .overflow-hidden { overflow: hidden; }
+
+/*
+ * Cover
+ */
+.cover {
+    padding: 0 1.5rem;
+}
+.cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+}
