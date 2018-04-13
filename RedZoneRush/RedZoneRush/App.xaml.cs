@@ -13,7 +13,7 @@ namespace RedZoneRush
         {
             InitializeComponent();
 
-            MainPage = new RedZoneRush.MainPage();
+            MainPage = new RedZoneRush.LoginPage();
         }
 
         protected override void OnStart()
